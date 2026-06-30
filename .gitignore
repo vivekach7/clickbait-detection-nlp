@@ -1,0 +1,28 @@
+# Data (not redistributed - see README)
+data/train/
+data/test/
+data/*.csv
+data/*.jsonl
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+venv/
+.venv/
+
+# Model checkpoints
+*.pkl
+*.h5
+*.pt
+*.pth
+roberta_runs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

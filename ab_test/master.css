@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap);
+
+@font-face{
+  font-family: 'Chomsky';
+  src: local('Chomsky'), local('Chomsky'),
+       url('fonts/Chomsky.woff2') format('woff2'),
+       url('fonts/Chomsky.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; color:#e2e2e2; font-family:'JetBrains Mono', monospace; }
+body{ background:#000; text-align:center; line-height:1.6; }
+h1{ text-transform:uppercase; font-weight:700; }
+
+header{ background:transparent; border:none; position:static; top:auto; padding-top:20px; }
+
+.site-title{
+  font-family:'Chomsky','Times New Roman',Times,serif;
+  font-size:clamp(34px,6vw,56px);
+  font-weight:400;
+  line-height:1.05;
+  letter-spacing:.2px;
+  margin-bottom:6px;
+}
+.site-title a{ color:#ffffff; text-decoration:none; }
+
+nav ul{ list-style:none; text-transform:uppercase; display:flex; justify-content:center; gap:48px; padding:20px; }
+nav a{ text-decoration:none; color:#666666; transition:color .2s, transform .15s; }
+nav a:hover{ color:#fff; transform:translateY(-1px); }
+nav a.active, nav a[aria-current="page"]{ color:#fff; font-weight:700; }
+
+.placeholder{ display:flex; justify-content:center; align-items:center; min-height:40vh; font-size:12px; color:#666666; }
+main{ padding:32px 16px; }
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 12px;
+  line-height: 1;
+  color: #666666;
+  background: transparent;
+}
+
+main { padding-bottom: 56px;}
+
+#projects-app { text-align: center; }
+.titlebar { display: inline-flex; align-items: baseline; gap: 16px; }
+.start-link { text-decoration: underline; cursor: pointer; user-select: none; }
+.start-link[aria-disabled="true"] { opacity:.6; pointer-events:none; cursor: default; }
+.hidden { display: none; }
+.titlebar h1 { cursor: pointer; }
+
+.titlebar { display: inline-flex; align-items: baseline; gap: 16px; }
+
+.start-link { text-decoration: underline; cursor: pointer; user-select: none; }
+.start-link[aria-disabled="true"] { opacity: 0.6; pointer-events: none; cursor: default; }
+
+#next-link[aria-disabled="true"] { color: #666666; pointer-events: none; cursor: default; }
+#next-link[aria-disabled="false"]:hover { cursor: pointer; }
+
+#next-link[aria-disabled="true"],
+#submit-link[aria-disabled="true"] {
+  color: #666666;
+  pointer-events: none;
+  cursor: default;
+}
+#next-link[aria-disabled="false"]:hover,
+#submit-link[aria-disabled="false"]:hover {
+  cursor: pointer;
+}
+
+.app .panel { margin: 16px auto; max-width: 900px; }
+
+#trial { text-align: center; padding: 0 12px; }
+
+#article-list {
+  display: grid;
+  gap: 12px;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  text-align: left;
+  list-style-position: outside;
+}
+
+#article-list label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: start;
+  column-gap: 8px;
+}
+
+#article-list label span {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+#article-list li { max-width: 100%; }
+
+.badge { display:inline-block; padding:2px 6px; border-radius:4px; font-size:0.85em; white-space:nowrap; }
+
+.risk-low  { background:#2e7d32; color:#fff; } 
+.risk-med  { background:#8c6d1f; color:#fff; }
+.risk-high { background:#c62828; color:#fff; }
+.risk-cb   { background:#ff0000; color:#fff; font-weight:600; }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projects - vivekach</title>
+  <link rel="stylesheet" href="master.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main>
+    <section id="projects-app" class="app">
+      <div class="titlebar">
+        <p id="acbd-title" role="button" tabindex="0">AUTOMATIC CLICKBAIT DETECTION</p>
+        <span id="start-link" class="start-link hidden" role="button" tabindex="0">START</span>
+      </div>
+    
+      <p id="assign-note" class="muted"></p>
+    
+      <form id="trial" class="panel" hidden>
+        <h2 id="round-title"></h2>
+      
+        <ol id="article-list"></ol>
+        <br />
+        <p id="selection-hint">SELECT FIVE ARTICLES YOU ARE INTERESTED IN</p>
+        <br />
+      
+        <div class="controls">
+          <span id="next-link" role="button" tabindex="0">NEXT ROUND</span>
+          <span id="submit-link" role="button" tabindex="0" hidden>SUBMIT</span>
+        </div>        
+      </form>      
+    
+      <button id="restart-btn" type="button" class="secondary" hidden disabled>RESTART</button>
+    </section>        
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
