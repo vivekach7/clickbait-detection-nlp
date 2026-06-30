@@ -2,7 +2,7 @@
 
 A comparative study of machine learning and deep learning approaches to detecting clickbait headlines, paired with a user-facing A/B test measuring whether showing a model's clickbait score actually changes what people choose to read.
 
-This was originally a postgraduate dissertation project (MSc Data Science, University of Southampton). The code here has been cleaned up and restructured for general reference — preprocessing notebooks have been converted into standalone scripts and reorganised around the experiments rather than the order they were run in.
+This was originally a postgraduate dissertation project (University of Southampton). The code here has been cleaned up and restructured for general reference. Preprocessing notebooks have been converted into standalone scripts and reorganised around the experiments rather than the order they were run in.
 
 ## What's here
 
